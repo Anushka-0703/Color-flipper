@@ -3,6 +3,7 @@
      padding: 0;
      box-sizing: border-box;
 }
+
 body {
      height: 100vh;
      text-align: center;
@@ -26,46 +27,60 @@ main {
      display: flex;
      flex-direction: column;
      width: 400px;
+     max-width: 90%;
      border-radius: 20px;
      box-shadow: 10px 10px 25px;
 }
+
 #btn {
      border-radius: 15px;
      padding: 10px 0;
      font-size: 20px;
      cursor: pointer;
+     border: none;
+     outline: none;
 }
+
 #color {
      font-size: 25px;
-     white-space: nowrap;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
 }
 
 #btn:hover {
      scale: 0.95;
-     transition: all 0.2s ease;
-     color: rgb(167, 45, 167);
+     transition: all 0.3s ease;
 }
+
 @media (max-width: 600px) {
+     main {
+          padding-top: 50px;
+     }
+
+     body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+     }
+
      .container {
-          width: 85%;
+          width: 90%;
           max-width: 350px;
           padding: 15px;
      }
+
      #color {
-          font-size: 1.2rem;
+          font-size: 1rem;
           text-align: center;
      }
+
      #btn {
           width: 100%;
+          font-size: 0.9rem;
           padding: 12px;
-     }
-     main {
-          padding-top: 0;
-          height: 100%;
-          width: 100%;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          background-color: rgb(216, 116, 216);
+          border: none;
+          outline: none;
      }
 }
