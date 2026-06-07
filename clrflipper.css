@@ -45,7 +45,7 @@ main {
      transition: all 0.2s ease;
      color: rgb(167, 45, 167);
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
      .container {
           width: 85%;
           max-width: 350px;
@@ -54,10 +54,11 @@ main {
      #color {
           font-size: 1.2rem;
           text-align: center;
+          white-space: nowrap;
      }
      #btn {
           width: 100%;
-          padding: 12px;
+          padding: 10px;
      }
      main {
           padding-top: 0;
@@ -66,6 +67,6 @@ main {
           align-items: center;
           display: flex;
           justify-content: center;
-          background-color: rgb(216, 116, 216);
+          background-color: aquamarine;
      }
 }
