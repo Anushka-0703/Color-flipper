@@ -45,14 +45,14 @@ main {
      transition: all 0.2s ease;
      color: rgb(167, 45, 167);
 }
-@media (max-width: 700px) {
+@media (max-width: 320px) {
      .container {
           width: 85%;
           max-width: 350px;
           padding: 15px;
      }
      #color {
-          font-size: 1.2rem;
+          font-size: 0.5rem;
           text-align: center;
           white-space: nowrap;
      }
