@@ -46,3 +46,18 @@ main {
      scale: 0.95;
      transition: all 0.3s ease;
 }
+
+@media (max-width: 500px) {
+     main {
+          padding: 10px;
+     }
+     #color {
+          font-size: 19px;
+     }
+     #btn {
+          font-size: 15px;
+     }
+     .container {
+          width: 300px;
+     }
+}
